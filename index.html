@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hooley Custom Homes LLC - Premier custom home builder serving Sanpete & Juab County. We bring to life the homes people dream of with quality craftsmanship and exceptional service."
+    />
+    <title>
+      Hooley Custom Homes LLC - Custom Home Builder in Sanpete & Juab County
+    </title>
+    <style>
+      :root {
+        --primary: #51a9df;
+        --secondary: #dee6ef;
+        --dark: #000000;
+        --light: #ffffff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      body {
+        background-color: var(--light);
+        color: var(--dark);
+        line-height: 1.6;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Header */
+      header {
+        background-color: var(--light);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+      }
+
+      .logo {
+        width: 200px;
+      }
+
+      .logo img {
+        width: 100%;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin-left: 30px;
+      }
+
+      .nav-links a {
+        color: var(--dark);
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: var(--primary);
+      }
+
+      .cta-button {
+        background-color: var(--primary);
+        color: var(--light);
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: background-color 0.3s;
+      }
+
+      .cta-button:hover {
+        background-color: #3a8bc0;
+        color: var(--light);
+      }
+
+      /* Hero Section */
+      .hero {
+        height: 100vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("/api/placeholder/1200/800");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        color: var(--light);
+        text-align: center;
+        padding-top: 80px;
+      }
+
+      .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+      }
+
+      .hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .hero-buttons .btn {
+        padding: 15px 30px;
+        border-radius: 5px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      .btn-primary {
+        background-color: var(--primary);
+        color: var(--light);
+      }
+
+      .btn-primary:hover {
+        background-color: #3a8bc0;
+      }
+
+      .btn-secondary {
+        background-color: transparent;
+        color: var(--light);
+        border: 2px solid var(--light);
+      }
+
+      .btn-secondary:hover {
+        background-color: var(--light);
+        color: var(--dark);
+      }
+
+      /* About Section */
+      .section {
+        padding: 100px 0;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-header h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .section-header h2::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 3px;
+        background-color: var(--primary);
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .about-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .about-image img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-text h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: var(--primary);
+      }
+
+      /* Services Section */
+      .services {
+        background-color: var(--secondary);
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .service-card {
+        background-color: var(--light);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .service-image {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .service-content {
+        padding: 20px;
+      }
+
+      .service-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: var(--primary);
+      }
+
+      /* Projects Section */
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .project-card {
+        position: relative;
+        height: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .project-image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.3s;
+      }
+
+      .project-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px;
+        color: var(--light);
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .project-card:hover .project-image {
+        transform: scale(1.1);
+      }
+
+      .project-card:hover .project-overlay {
+        opacity: 1;
+      }
+
+      /* Testimonials Section */
+      .testimonials {
+        background-color: var(--secondary);
+      }
+
+      .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .testimonial-card {
+        background-color: var(--light);
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .testimonial-text {
+        font-style: italic;
+        margin-bottom: 20px;
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+      }
+
+      .author-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      /* CTA Section */
+      .cta {
+        background-color: var(--primary);
+        color: var(--light);
+        text-align: center;
+      }
+
+      .cta h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .cta p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .cta .btn {
+        background-color: var(--light);
+        color: var(--primary);
+        padding: 15px 30px;
+        border-radius: 5px;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s;
+      }
+
+      .cta .btn:hover {
+        background-color: var(--dark);
+        color: var(--light);
+      }
+
+      /* Footer */
+      footer {
+        background-color: var(--dark);
+        color: var(--light);
+        padding: 60px 0 30px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .footer-column h3 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .footer-column h3::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background-color: var(--primary);
+        bottom: -10px;
+        left: 0;
+      }
+
+      .footer-links {
+        list-style: none;
+      }
+
+      .footer-links li {
+        margin-bottom: 10px;
+      }
+
+      .footer-links a {
+        color: #ccc;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-links a:hover {
+        color: var(--primary);
+      }
+
+      .social-links {
+        display: flex;
+        gap: 15px;
+      }
+
+      .social-links a {
+        color: var(--light);
+        font-size: 1.5rem;
+        transition: color 0.3s;
+      }
+
+      .social-links a:hover {
+        color: var(--primary);
+      }
+
+      .copyright {
+        text-align: center;
+        border-top: 1px solid #333;
+        padding-top: 20px;
+        color: #ccc;
+      }
+
+      /* Media Queries */
+      @media (max-width: 768px) {
+        .about-content {
+          grid-template-columns: 1fr;
+        }
+
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero p {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <img
+            src="https://storage.googleapis.com/Claude-related-production/7f77b5a0-0323-11ef-901e-e29b7b474f2a.jpg"
+            alt="Hooley Custom Homes LLC Logo"
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="cta-button">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <h1>We Don't Just Build Homes, We Build Relationships</h1>
+        <p>
+          Bringing to life the homes people dream of in Sanpete & Juab County
+        </p>
+        <div class="hero-buttons">
+          <a href="projects.html" class="btn btn-primary">View Our Projects</a>
+          <a href="contact.html" class="btn btn-secondary">Get A Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About Hooley Custom Homes</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="/api/placeholder/600/400"
+              alt="Hooley Custom Homes Project"
+            />
+          </div>
+          <div class="about-text">
+            <h3>Your Vision, Our Expertise</h3>
+            <p>
+              At Hooley Custom Homes, we're more than just builders - we're
+              dream makers. With years of experience in custom home
+              construction, renovations, and remodels, we take pride in turning
+              your vision into reality.
+            </p>
+            <p>
+              Our team of skilled professionals is dedicated to quality
+              craftsmanship, attention to detail, and exceptional customer
+              service. We believe in building not just beautiful homes, but
+              lasting relationships with our clients.
+            </p>
+            <p>
+              Whether you're looking to build your dream home from the ground
+              up, renovate an existing space, or add custom features to your
+              current home, Hooley Custom Homes is your trusted partner in
+              Sanpete and Juab counties.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Services</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div
+              class="service-image"
+              style="background-image: url('/api/placeholder/400/300')"
+            ></div>
+            <div class="service-content">
+              <h3>Custom Home Building</h3>
+              <p>
+                From concept to completion, we build the home of your dreams
+                with quality craftsmanship and attention to detail.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div
+              class="service-image"
+              style="background-image: url('/api/placeholder/400/300')"
+            ></div>
+            <div class="service-content">
+              <h3>Renovations & Remodels</h3>
+              <p>
+                Transform your existing space with our expert renovation and
+                remodeling services tailored to your needs.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div
+              class="service-image"
+              style="background-image: url('/api/placeholder/400/300')"
+            ></div>
+            <div class="service-content">
+              <h3>Custom Kitchens & Bathrooms</h3>
+              <p>
+                Create beautiful, functional spaces with our custom kitchen and
+                bathroom design and installation services.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div
+              class="service-image"
+              style="background-image: url('/api/placeholder/400/300')"
+            ></div>
+            <div class="service-content">
+              <h3>Home Additions</h3>
+              <p>
+                Expand your living space with seamless additions that match your
+                home's style and meet your family's needs.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div
+              class="service-image"
+              style="background-image: url('/api/placeholder/400/300')"
+            ></div>
+            <div class="service-content">
+              <h3>Income Properties</h3>
+              <p>
+                Build or convert spaces into income-generating properties with
+                basement apartments, casitas, and more.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div
+              class="service-image"
+              style="background-image: url('/api/placeholder/400/300')"
+            ></div>
+            <div class="service-content">
+              <h3>Custom Features</h3>
+              <p>
+                Enhance your home with custom trim, molding, doors, and unique
+                architectural elements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="background-image: url('/api/placeholder/400/300')"
+            ></div>
+            <div class="project-overlay">
+              <h3>Custom Home in Manti</h3>
+              <p>3,500 sq ft custom build with modern farmhouse elements</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="background-image: url('/api/placeholder/400/300')"
+            ></div>
+            <div class="project-overlay">
+              <h3>Kitchen Remodel in Ephraim</h3>
+              <p>Complete kitchen renovation with custom cabinetry</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="background-image: url('/api/placeholder/400/300')"
+            ></div>
+            <div class="project-overlay">
+              <h3>Basement Apartment</h3>
+              <p>Convert unfinished basement to income property</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="background-image: url('/api/placeholder/400/300')"
+            ></div>
+            <div class="project-overlay">
+              <h3>Custom Entryway</h3>
+              <p>Grand entrance with custom woodwork and lighting</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="background-image: url('/api/placeholder/400/300')"
+            ></div>
+            <div class="project-overlay">
+              <h3>Home Office Addition</h3>
+              <p>400 sq ft addition with custom built-ins</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="background-image: url('/api/placeholder/400/300')"
+            ></div>
+            <div class="project-overlay">
+              <h3>Master Suite Renovation</h3>
+              <p>Luxury upgrade with custom tile work and walk-in closet</p>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px">
+          <a href="projects.html" class="btn btn-primary">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Clients Say</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              <p>
+                "Hooley Custom Homes exceeded our expectations in every way.
+                Their attention to detail and quality craftsmanship is
+                unmatched. We couldn't be happier with our dream home."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div
+                class="author-image"
+                style="background-image: url('/api/placeholder/100/100')"
+              ></div>
+              <div>
+                <h4>John & Sarah Thompson</h4>
+                <p>Custom Home Build</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              <p>
+                "The team at Hooley was professional from start to finish. They
+                listened to our needs and delivered a beautiful kitchen remodel
+                that transformed our entire home."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div
+                class="author-image"
+                style="background-image: url('/api/placeholder/100/100')"
+              ></div>
+              <div>
+                <h4>Mike Johnson</h4>
+                <p>Kitchen Remodel</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              <p>
+                "Our basement apartment has been generating income for over a
+                year now thanks to Hooley Custom Homes. They handled everything
+                from permits to finishing touches."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div
+                class="author-image"
+                style="background-image: url('/api/placeholder/100/100')"
+              ></div>
+              <div>
+                <h4>The Andersons</h4>
+                <p>Basement Apartment Conversion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta" id="contact">
+      <div class="container">
+        <h2>Ready to Build Your Dream Home?</h2>
+        <p>
+          Contact us today for a free consultation and let's bring your vision
+          to life.
+        </p>
+        <a href="contact.html" class="btn">Get In Touch</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3>Hooley Custom Homes</h3>
+            <p>
+              Bringing to life the homes people dream of in Sanpete & Juab
+              County.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/drywallcontractor/"
+                target="_blank"
+                >FB</a
+              >
+              <a
+                href="https://www.instagram.com/hooleygeneralcontracting"
+                target="_blank"
+                >IG</a
+              >
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Services</h3>
+            <ul class="footer-links">
+              <li><a href="services.html">Custom Home Building</a></li>
+              <li><a href="services.html">Renovations & Remodels</a></li>
+              <li><a href="services.html">Custom Kitchens & Bathrooms</a></li>
+              <li><a href="services.html">Home Additions</a></li>
+              <li><a href="services.html">Income Properties</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="footer-links">
+              <li>Phone: (555) 123-4567</li>
+              <li>Email: info@hooleycustomhomes.com</li>
+              <li>Address: Sanpete County, Utah</li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Hooley Custom Homes LLC. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

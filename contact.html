@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Hooley Custom Homes for your custom home building, renovation, or remodeling project in Sanpete & Juab County.">
+    <title>Contact Us - Hooley Custom Homes LLC</title>
+    <style>
+        :root {
+            --primary: #51a9df;
+            --secondary: #dee6ef;
+            --dark: #000000;
+            --light: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--light);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            width: 200px;
+        }
+        
+        .logo img {
+            width: 100%;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .cta-button {
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #3a8bc0;
+            color: var(--light);
+        }
+        
+        /* Page Banner */
+        .page-banner {
+            height: 40vh;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://storage.googleapis.com/Claude-related-production/e4080600-032f-11ef-aae1-0b00f88a39f9.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            text-align: center;
+            padding-top: 80px;
+        }
+        
+        .banner-content {
+            max-width: 800px;
+        }
+        
+        .page-banner h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .page-banner p {
+            font-size: 1.2rem;
+        }
+        
+        /* Contact Section */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            background-color: var(--primary);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .contact-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+        
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .btn {
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #3a8bc0;
+        }
+        
+        .contact-card {
+            background-color: var(--secondary);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .contact-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .contact-details {
+            list-style: none;
+        }
+        
+        .contact-details li {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        
+        .contact-details .icon {
+            margin-right: 15px;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            color: var(--light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: #3a8bc0;
+        }
+        
+        .business-hours {
+            padding: 20px 0;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            margin: 20px 0;
+        }
+        
+        .business-hours h4 {
+            margin-bottom: 15px;
+        }
+        
+        .hours-list {
+            list-style: none;
+        }
+        
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        /* Map Section */
+        .map-section {
+            height: 400px;
+            background-color: #eee;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            background-color: var(--secondary);
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background-color: var(--light);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            background-color: var(--light);
+            cursor: pointer;
+            position: relative;
+            font-weight: 600;
+        }
+        
+        .faq-question:after {
+            content: '+';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: #f9f9f9;
+        }
+        
+        .faq-item.active .faq-question:after {
+            content: '-';
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 300px;
+        }
+        
+        /* CTA Section */
+        .cta {
+            background-color: var(--primary);
+            color: var(--light);
+            text-align: center;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta .btn {
+            background-color: var(--light);
+            color: var(--primary);
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+        
+        .cta .btn:hover {
+            background-color: var(--dark);
+            color: var(--light);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 60px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background-color: var(--primary);
+            bottom: -10px;
+            left: 0;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            color: var(--light);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary);
+        }
+        
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            color: #ccc;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+            
+            .page-banner h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://storage.googleapis.com/Claude-related-production/7f77b5a0-0323-11ef-901e-e29b7b474f2a.jpg" alt="Hooley Custom Homes LLC Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="cta-button">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container banner-content">
+            <h1>Contact Us</h1>
+            <p>Let's discuss how we can bring your vision to life</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-intro">
+                <p>We're here to answer any questions you have about our services. Reach out to us directly or fill out the form below, and a member of our team will get back to you as soon as possible.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service" class="form-control">
+                                <option value="" selected disabled>Select a Service</option>
+                                <option value="custom-home">Custom Home Building</option>
+                                <option value="renovation">Renovations & Remodels</option>
+                                <option value="addition">Home Additions</option>
+                                <option value="income-property">Income Properties</option>
+                                <option value="custom-features">Custom Features</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Contact Information</h3>
+                        <ul class="contact-details">
+                            <li>
+                                <span class="icon">📱</span>
+                                <span>(555) 123-4567</span>
+                            </li>
+                            <li>
+                                <span class="icon">✉️</span>
+                                <span>info@hooleycustomhomes.com</span>
+                            </li>
+                            <li>
+                                <span class="icon">📍</span>
+                                <span>Sanpete County, Utah</span>
+                            </li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/drywallcontractor/" target="_blank">FB</a>
+                            <a href="https://www.instagram.com/hooleygeneralcontracting" target="_blank">IG</a>
+                        </div>
+                        <div class="business-hours">
+                            <h4>Business Hours</h4>
+                            <ul class="hours-list">
+                                <li>
+                                    <span>Monday - Friday</span>
+                                    <span>8:00 AM - 5:00 PM</span>
+                                </li>
+                                <li>
+                                    <span>Saturday</span>
+                                    <span>By Appointment</span>
+                                </li>
+                                <li>
+                                    <span>Sunday</span>
+                                    <span>Closed</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>We serve all of Sanpete County and Juab County, including Manti, Ephraim, Mount Pleasant, Moroni, Nephi, and surrounding areas.</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Careers at Hooley</h3>
+                        <p>We're always looking for talented individuals to join our team. If you're interested in a career in custom home building, send your resume to:</p>
+                        <p><strong>careers@hooleycustomhomes.com</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <!-- Replace with an actual map embed code -->
+        <div style="width: 100%; height: 100%; background: #eee; display: flex; align-items: center; justify-content: center;">
+            <p>Map of Sanpete County Service Area</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">What areas do you serve?</div>
+                    <div class="faq-answer">
+                        <p>We primarily serve Sanpete County and Juab County, including Manti, Ephraim, Mount Pleasant, Spring City, Moroni, Fountain Green, Nephi, and surrounding areas. If you're outside these areas, please contact us to discuss your project.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How long does a custom home build typically take?</div>
+                    <div class="faq-answer">
+                        <p>The timeline for a custom home build varies depending on the size, complexity, and specific requirements of your project. Generally, you can expect a custom home to take anywhere from 6 to 12 months from design to completion. We'll provide you with a more accurate timeline during our initial consultation based on your specific project.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do you provide financing options?</div>
+                    <div class="faq-answer">
+                        <p>While we don't provide direct financing, we work closely with several local lenders who specialize in construction loans and can recommend options based on your needs. We're happy to coordinate with your lender throughout the building process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do I need to hire an architect before contacting you?</div>
+                    <div class="faq-answer">
+                        <p>No, you don't need to hire an architect before contacting us. We offer complete design-build services and can help you from the initial concept through completion. We work with trusted architects and designers who can create custom plans based on your vision, or we can work with plans you already have.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer warranties on your work?</div>
+                    <div class="faq-answer">
+                        <p>Yes, we stand behind our work with a comprehensive warranty program. New custom homes come with a 1-year workmanship warranty and longer warranties on specific systems and components. For renovations and additions, we offer a 1-year warranty on all workmanship. We'll provide detailed warranty information as part of your project proposal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="container">
+            <h2>Let's Build Something Amazing Together</h2>
+            <p>Whether you're ready to start your project or just have questions, we're here to help.</p>
+            <a href="#" class="btn">Schedule a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Hooley Custom Homes</h3>
+                    <p>Bringing to life the homes people dream of in Sanpete & Juab County.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/drywallcontractor/" target="_blank">FB</a>
+                        <a href="https://www.instagram.com/hooleygeneralcontracting" target="_blank">IG</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Custom Home Building</a></li>
+                        <li><a href="services.html">Renovations & Remodels</a></li>
+                        <li><a href="services.html">Home Additions</a></li>
+                        <li><a href="services.html">Income Properties</a></li>
+                        <li><a href="services.html">Custom Features</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Email: info@hooleycustomhomes.com</li>
+                        <li>Address: Sanpete County, Utah</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Hooley Custom Homes LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for FAQ accordion -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all items
+                    faqItems.forEach(faqItem => {
+                        faqItem.classList.remove('active');
+                    });
+                    
+                    // Open clicked item if it wasn't active
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
