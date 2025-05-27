@@ -1,1224 +1,1347 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Hooley Custom Homes - a family-owned custom home builder with deep roots in Sanpete County. Discover our story, team, values, and commitment to quality craftsmanship.">
-    <meta name="keywords" content="about Hooley Custom Homes, family owned builder, Sanpete County builder, custom home builder story, Nate Hooley, Central Utah construction">
-    <title>About Us - Hooley Custom Homes | Family-Owned Builder in Central Utah</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about Hooley Custom Homes - a family-owned custom home builder with deep roots in Sanpete County. Discover our story, team, values, and commitment to quality craftsmanship."
+    />
+    <meta
+      name="keywords"
+      content="about Hooley Custom Homes, family owned builder, Sanpete County builder, custom home builder story, Nate Hooley, Central Utah construction"
+    />
+    <title>
+      About Us - Hooley Custom Homes | Family-Owned Builder in Central Utah
+    </title>
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-        :root {
-            --primary: #51A9DF;
-            --secondary: #585C5F;
-            --dark: #000000;
-            --light: #ffffff;
-            --gray: #f5f5f5;
-            --light-gray: #dee6ef;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        body {
-            background-color: var(--light);
-            color: var(--dark);
-            line-height: 1.6;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header */
-        header {
-            background-color: var(--light);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            z-index: 100;
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-        }
-        
-        .logo {
-            width: 180px;
-        }
-        
-        .logo img {
-            width: 100%;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-links li {
-            margin-left: 30px;
-        }
-        
-        .nav-links a {
-            color: var(--dark);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        
-        .nav-links a:hover,
-        .nav-links a.active {
-            color: var(--primary);
-        }
-        
-        .cta-button {
-            background-color: var(--primary);
-            color: var(--light) !important;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: 600;
-            transition: background-color 0.3s;
-        }
-        
-        .cta-button:hover {
-            background-color: #3a8bc0;
-        }
-        
-        .mobile-toggle {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-        
-        /* Page Banner */
-        .page-banner {
-            height: 60vh;
-            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/about-banner.jpg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--light);
-            text-align: center;
-            padding-top: 80px;
-        }
-        
-        .banner-content {
-            max-width: 800px;
-        }
-        
-        .page-banner h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        
-        .page-banner p {
-            font-size: 1.3rem;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-        }
-        
-        /* Main Sections */
-        .section {
-            padding: 80px 0;
-        }
-        
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        
-        .section-header h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            position: relative;
-        }
-        
-        .section-header h2::after {
-            content: '';
-            position: absolute;
-            width: 100px;
-            height: 3px;
-            background-color: var(--primary);
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        /* Our Story Section */
+      :root {
+        --primary: #51a9df;
+        --secondary: #585c5f;
+        --dark: #000000;
+        --light: #ffffff;
+        --gray: #f5f5f5;
+        --light-gray: #dee6ef;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      body {
+        background-color: var(--light);
+        color: var(--dark);
+        line-height: 1.6;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Page Banner */
+      .page-banner {
+        height: 60vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url("images/about-banner.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--light);
+        text-align: center;
+        padding-top: 80px;
+      }
+
+      .banner-content {
+        max-width: 800px;
+      }
+
+      .page-banner h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .page-banner p {
+        font-size: 1.3rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Main Sections */
+      .section {
+        padding: 80px 0;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-header h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .section-header h2::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 3px;
+        background-color: var(--primary);
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      /* Our Story Section */
+      .story-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 60px;
+      }
+
+      .story-image img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .story-text h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: var(--primary);
+      }
+
+      .story-text p {
+        margin-bottom: 15px;
+        color: var(--secondary);
+      }
+
+      /* Stats Section */
+      .stats-container {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 50px 0;
+        background-color: var(--light-gray);
+        padding: 50px 20px;
+        border-radius: 10px;
+      }
+
+      .stat-item {
+        flex: 1;
+      }
+
+      .stat-number {
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 10px;
+      }
+
+      .stat-label {
+        font-size: 1.2rem;
+        color: var(--secondary);
+        font-weight: 600;
+      }
+
+      /* Timeline Section */
+      .timeline {
+        background-color: var(--gray);
+      }
+
+      .timeline-container {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .timeline-container:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: var(--primary);
+        transform: translateX(-50%);
+      }
+
+      .timeline-item {
+        display: flex;
+        margin-bottom: 50px;
+        position: relative;
+      }
+
+      .timeline-item:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      .timeline-content {
+        flex: 1;
+        background-color: var(--light);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        margin: 0 30px;
+        position: relative;
+      }
+
+      .timeline-year {
+        position: absolute;
+        left: 50%;
+        top: 30px;
+        transform: translateX(-50%);
+        background-color: var(--primary);
+        color: var(--light);
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-weight: 700;
+        z-index: 2;
+      }
+
+      .timeline-title {
+        font-size: 1.4rem;
+        color: var(--primary);
+        margin-bottom: 15px;
+      }
+
+      .timeline-description {
+        color: var(--secondary);
+      }
+
+      /* Team Section */
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 40px;
+        margin-top: 50px;
+      }
+
+      .team-member {
+        background-color: var(--light);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        text-align: center;
+      }
+
+      .team-member:hover {
+        transform: translateY(-5px);
+      }
+
+      .team-image {
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .team-content {
+        padding: 25px;
+      }
+
+      .team-content h4 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        color: var(--primary);
+      }
+
+      .team-role {
+        color: var(--secondary);
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .team-bio {
+        color: var(--secondary);
+        font-size: 0.9rem;
+      }
+
+      /* Values Section */
+      .values {
+        background-color: var(--light-gray);
+      }
+
+      .values-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .value-item {
+        background-color: var(--light);
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .value-icon {
+        font-size: 3rem;
+        color: var(--primary);
+        margin-bottom: 20px;
+      }
+
+      .value-title {
+        font-size: 1.3rem;
+        color: var(--primary);
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      .value-description {
+        color: var(--secondary);
+      }
+
+      /* Approach Section */
+      .approach-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .approach-item {
+        margin-bottom: 40px;
+        padding: 30px;
+        background-color: var(--light);
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .approach-item h4 {
+        font-size: 1.4rem;
+        color: var(--primary);
+        margin-bottom: 15px;
+      }
+
+      .approach-item p {
+        color: var(--secondary);
+      }
+
+      .process-steps {
+        list-style: none;
+        margin: 20px 0;
+        padding-left: 20px;
+      }
+
+      .process-steps li {
+        position: relative;
+        margin-bottom: 10px;
+        color: var(--secondary);
+      }
+
+      .process-steps li:before {
+        content: counter(step-counter);
+        counter-increment: step-counter;
+        position: absolute;
+        left: -30px;
+        top: 0;
+        background-color: var(--primary);
+        color: var(--light);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+
+      .process-steps {
+        counter-reset: step-counter;
+      }
+
+      /* FAQ Section */
+      .faq {
+        background-color: var(--gray);
+      }
+
+      .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .faq-item {
+        background-color: var(--light);
+        border-radius: 5px;
+        margin-bottom: 15px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .faq-question {
+        padding: 20px;
+        cursor: pointer;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--dark);
+      }
+
+      .faq-question:after {
+        content: "+";
+        font-size: 1.5rem;
+        color: var(--primary);
+      }
+
+      .faq-answer {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+        color: var(--secondary);
+      }
+
+      .faq-item.active .faq-question:after {
+        content: "-";
+      }
+
+      .faq-item.active .faq-answer {
+        max-height: 500px;
+        padding: 0 20px 20px;
+      }
+
+      /* CTA Section */
+      .cta {
+        background-color: var(--primary);
+        color: var(--light);
+        text-align: center;
+      }
+
+      .cta h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .cta p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .cta .btn {
+        background-color: var(--light);
+        color: var(--primary);
+        padding: 15px 30px;
+        border-radius: 5px;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s;
+      }
+
+      .cta .btn:hover {
+        background-color: var(--secondary);
+        color: var(--light);
+      }
+
+      /* Media Queries */
+      @media (max-width: 992px) {
         .story-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-            margin-bottom: 60px;
+          grid-template-columns: 1fr;
         }
-        
-        .story-image img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+        .story-image {
+          margin-bottom: 30px;
         }
-        
-        .story-text h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            color: var(--primary);
-        }
-        
-        .story-text p {
-            margin-bottom: 15px;
-            color: var(--secondary);
-        }
-        
-        /* Stats Section */
+
         .stats-container {
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-            margin: 50px 0;
-            background-color: var(--light-gray);
-            padding: 50px 20px;
-            border-radius: 10px;
+          flex-wrap: wrap;
         }
-        
+
         .stat-item {
-            flex: 1;
+          width: 50%;
+          margin-bottom: 30px;
         }
-        
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 10px;
-        }
-        
-        .stat-label {
-            font-size: 1.2rem;
-            color: var(--secondary);
-            font-weight: 600;
-        }
-        
-        /* Timeline Section */
-        .timeline {
-            background-color: var(--gray);
-        }
-        
-        .timeline-container {
-            max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-        }
-        
+
         .timeline-container:before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background-color: var(--primary);
-            transform: translateX(-50%);
+          left: 20px;
         }
-        
-        .timeline-item {
-            display: flex;
-            margin-bottom: 50px;
-            position: relative;
-        }
-        
+
+        .timeline-item,
         .timeline-item:nth-child(even) {
-            flex-direction: row-reverse;
+          flex-direction: row;
         }
-        
+
         .timeline-content {
-            flex: 1;
-            background-color: var(--light);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            margin: 0 30px;
-            position: relative;
+          margin-left: 50px;
+          margin-right: 0;
         }
-        
+
         .timeline-year {
-            position: absolute;
-            left: 50%;
-            top: 30px;
-            transform: translateX(-50%);
-            background-color: var(--primary);
-            color: var(--light);
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-weight: 700;
-            z-index: 2;
+          left: 20px;
+          transform: translateX(-50%);
         }
-        
-        .timeline-title {
-            font-size: 1.4rem;
-            color: var(--primary);
-            margin-bottom: 15px;
+      }
+
+      @media (max-width: 768px) {
+        .page-banner h1 {
+          font-size: 2.5rem;
         }
-        
-        .timeline-description {
-            color: var(--secondary);
+
+        .mobile-toggle {
+          display: block;
         }
-        
-        /* Team Section */
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 40px;
-            margin-top: 50px;
+
+        .nav-links {
+          position: fixed;
+          top: 80px;
+          left: -100%;
+          width: 100%;
+          height: calc(100vh - 80px);
+          background-color: var(--light);
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          padding-top: 50px;
+          transition: left 0.3s;
         }
-        
-        .team-member {
-            background-color: var(--light);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            text-align: center;
+
+        .nav-links.active {
+          left: 0;
         }
-        
-        .team-member:hover {
-            transform: translateY(-5px);
+
+        .nav-links li {
+          margin: 0 0 20px 0;
         }
-        
-        .team-image {
-            height: 250px;
-            background-size: cover;
-            background-position: center;
+
+        .stat-item {
+          width: 100%;
         }
-        
-        .team-content {
-            padding: 25px;
-        }
-        
-        .team-content h4 {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-            color: var(--primary);
-        }
-        
-        .team-role {
-            color: var(--secondary);
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        
-        .team-bio {
-            color: var(--secondary);
-            font-size: 0.9rem;
-        }
-        
-        /* Values Section */
-        .values {
-            background-color: var(--light-gray);
-        }
-        
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-        
-        .value-item {
-            background-color: var(--light);
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .value-icon {
-            font-size: 3rem;
-            color: var(--primary);
-            margin-bottom: 20px;
-        }
-        
-        .value-title {
-            font-size: 1.3rem;
-            color: var(--primary);
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        
-        .value-description {
-            color: var(--secondary);
-        }
-        
-        /* Approach Section */
-        .approach-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .approach-item {
-            margin-bottom: 40px;
-            padding: 30px;
-            background-color: var(--light);
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .approach-item h4 {
-            font-size: 1.4rem;
-            color: var(--primary);
-            margin-bottom: 15px;
-        }
-        
-        .approach-item p {
-            color: var(--secondary);
-        }
-        
-        .process-steps {
-            list-style: none;
-            margin: 20px 0;
-            padding-left: 20px;
-        }
-        
-        .process-steps li {
-            position: relative;
-            margin-bottom: 10px;
-            color: var(--secondary);
-        }
-        
-        .process-steps li:before {
-            content: counter(step-counter);
-            counter-increment: step-counter;
-            position: absolute;
-            left: -30px;
-            top: 0;
-            background-color: var(--primary);
-            color: var(--light);
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8rem;
-            font-weight: bold;
-        }
-        
-        .process-steps {
-            counter-reset: step-counter;
-        }
-        
-        /* FAQ Section */
-        .faq {
-            background-color: var(--gray);
-        }
-        
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .faq-item {
-            background-color: var(--light);
-            border-radius: 5px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        
-        .faq-question {
-            padding: 20px;
-            cursor: pointer;
-            font-weight: 600;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: var(--dark);
-        }
-        
-        .faq-question:after {
-            content: '+';
-            font-size: 1.5rem;
-            color: var(--primary);
-        }
-        
-        .faq-answer {
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-            color: var(--secondary);
-        }
-        
-        .faq-item.active .faq-question:after {
-            content: '-';
-        }
-        
-        .faq-item.active .faq-answer {
-            max-height: 500px;
-            padding: 0 20px 20px;
-        }
-        
-        /* CTA Section */
-        .cta {
-            background-color: var(--primary);
-            color: var(--light);
-            text-align: center;
-        }
-        
-        .cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .cta p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .cta .btn {
-            background-color: var(--light);
-            color: var(--primary);
-            padding: 15px 30px;
-            border-radius: 5px;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.3s;
-        }
-        
-        .cta .btn:hover {
-            background-color: var(--secondary);
-            color: var(--light);
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: var(--light);
-            padding: 60px 0 30px;
-        }
-        
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-column h3 {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            position: relative;
-        }
-        
-        .footer-column h3::after {
-            content: '';
-            position: absolute;
-            width: 50px;
-            height: 2px;
-            background-color: var(--primary);
-            bottom: -10px;
-            left: 0;
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links a {
-            color: #ccc;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .footer-links a:hover {
-            color: var(--primary);
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        
-        .social-links a {
-            color: var(--light);
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-        
-        .social-links a:hover {
-            color: var(--primary);
-        }
-        
-        .copyright {
-            text-align: center;
-            border-top: 1px solid #333;
-            padding-top: 20px;
-            color: #ccc;
-        }
-        
-        /* Media Queries */
-        @media (max-width: 992px) {
-            .story-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .story-image {
-                margin-bottom: 30px;
-            }
-            
-            .stats-container {
-                flex-wrap: wrap;
-            }
-            
-            .stat-item {
-                width: 50%;
-                margin-bottom: 30px;
-            }
-            
-            .timeline-container:before {
-                left: 20px;
-            }
-            
-            .timeline-item,
-            .timeline-item:nth-child(even) {
-                flex-direction: row;
-            }
-            
-            .timeline-content {
-                margin-left: 50px;
-                margin-right: 0;
-            }
-            
-            .timeline-year {
-                left: 20px;
-                transform: translateX(-50%);
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .page-banner h1 {
-                font-size: 2.5rem;
-            }
-            
-            .mobile-toggle {
-                display: block;
-            }
-            
-            .nav-links {
-                position: fixed;
-                top: 80px;
-                left: -100%;
-                width: 100%;
-                height: calc(100vh - 80px);
-                background-color: var(--light);
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-                padding-top: 50px;
-                transition: left 0.3s;
-            }
-            
-            .nav-links.active {
-                left: 0;
-            }
-            
-            .nav-links li {
-                margin: 0 0 20px 0;
-            }
-            
-            .stat-item {
-                width: 100%;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <div class="container header-container">
-            <div class="logo">
-                <img src="https://storage.googleapis.com/Claude-related-production/7f77b5a0-0323-11ef-901e-e29b7b474f2a.jpg" alt="Hooley Custom Homes LLC Logo">
-            </div>
-            <div class="mobile-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html" class="cta-button">Contact Us</a></li>
-            </ul>
+      <div class="container header-container">
+        <div class="logo">
+          <img
+            src="https://storage.googleapis.com/Claude-related-production/7f77b5a0-0323-11ef-901e-e29b7b474f2a.jpg"
+            alt="Hooley Custom Homes LLC Logo"
+          />
         </div>
+        <div class="mobile-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="cta-button">Contact Us</a></li>
+        </ul>
+      </div>
     </header>
 
     <!-- Page Banner -->
     <section class="page-banner">
-        <div class="container banner-content">
-            <h1>About Hooley Custom Homes</h1>
-            <p>Discover our mission to create dream homes and the unique relationships we build with clients</p>
-        </div>
+      <div class="container banner-content">
+        <h1>About Hooley Custom Homes</h1>
+        <p>
+          Discover our mission to create dream homes and the unique
+          relationships we build with clients
+        </p>
+      </div>
     </section>
 
     <!-- Our Story Section -->
     <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Story</h2>
-            </div>
-            <div class="story-content">
-                <div class="story-image">
-                    <img src="images/hooley-story.jpg" alt="Hooley Custom Homes Story">
-                </div>
-                <div class="story-text">
-                    <h3>Building Dreams Since 2007</h3>
-                    <p>Hooley Custom Homes was founded with a simple yet powerful vision: to create exceptional custom homes that perfectly blend with Central Utah's distinctive landscape and reflect the unique personalities of the families who live in them.</p>
-                    <p>With deep roots in Sanpete County, our family has been building and crafting for generations. What began as a small remodeling business has grown into one of the region's most respected custom home building companies, known for uncompromising quality and personalized service.</p>
-                    <p>Our founder's background in traditional craftsmanship, combined with forward-thinking building techniques, has established a company culture where innovation meets time-honored building practices. This approach has allowed us to create homes that honor Central Utah's rich architectural heritage while incorporating modern amenities and energy-efficient features.</p>
-                </div>
-            </div>
-            
-            <!-- Stats Section -->
-            <div class="stats-container">
-                <div class="stat-item">
-                    <div class="stat-number">200+</div>
-                    <div class="stat-label">Satisfied Clients</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">20+</div>
-                    <div class="stat-label">Years of Experience</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">100+</div>
-                    <div class="stat-label">Homes Renovated</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Custom Homes Built</div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Story</h2>
         </div>
+        <div class="story-content">
+          <div class="story-image">
+            <img
+              src="images/hooley-story.jpg"
+              alt="Hooley Custom Homes Story"
+            />
+          </div>
+          <div class="story-text">
+            <h3>Building Dreams Since 2007</h3>
+            <p>
+              Hooley Custom Homes was founded with a simple yet powerful vision:
+              to create exceptional custom homes that perfectly blend with
+              Central Utah's distinctive landscape and reflect the unique
+              personalities of the families who live in them.
+            </p>
+            <p>
+              With deep roots in Sanpete County, our family has been building
+              and crafting for generations. What began as a small remodeling
+              business has grown into one of the region's most respected custom
+              home building companies, known for uncompromising quality and
+              personalized service.
+            </p>
+            <p>
+              Our founder's background in traditional craftsmanship, combined
+              with forward-thinking building techniques, has established a
+              company culture where innovation meets time-honored building
+              practices. This approach has allowed us to create homes that honor
+              Central Utah's rich architectural heritage while incorporating
+              modern amenities and energy-efficient features.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-container">
+          <div class="stat-item">
+            <div class="stat-number">200+</div>
+            <div class="stat-label">Satisfied Clients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Homes Renovated</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Custom Homes Built</div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Timeline Section -->
     <section class="section timeline">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Journey: Building Dreams</h2>
-            </div>
-            <div class="timeline-container">
-                <div class="timeline-year">2007</div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h4 class="timeline-title">Foundation & Launch</h4>
-                        <p class="timeline-description">Hooley Custom Homes was founded, focusing on custom home construction and exceptional client relationships in Sanpete County.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-year">2010</div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h4 class="timeline-title">Service Expansion</h4>
-                        <p class="timeline-description">We expanded our services to include comprehensive remodeling and custom renovations, enhancing our offerings to better serve Central Utah families.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-year">2015</div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h4 class="timeline-title">Major Milestone</h4>
-                        <p class="timeline-description">Celebrated 100 completed homes, showcasing our commitment to quality craftsmanship and customer satisfaction throughout the region.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-year">2020</div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h4 class="timeline-title">Innovation & Growth</h4>
-                        <p class="timeline-description">Integrated new technologies and sustainable building practices while maintaining our commitment to traditional craftsmanship and personal service.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-year">Present</div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h4 class="timeline-title">Continuing Excellence</h4>
-                        <p class="timeline-description">Today, we continue to innovate and build lasting relationships, striving to make every dream home a reality while contributing to Central Utah's vibrant future.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Journey: Building Dreams</h2>
         </div>
+        <div class="timeline-container">
+          <div class="timeline-year">2007</div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h4 class="timeline-title">Foundation & Launch</h4>
+              <p class="timeline-description">
+                Hooley Custom Homes was founded, focusing on custom home
+                construction and exceptional client relationships in Sanpete
+                County.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-year">2010</div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h4 class="timeline-title">Service Expansion</h4>
+              <p class="timeline-description">
+                We expanded our services to include comprehensive remodeling and
+                custom renovations, enhancing our offerings to better serve
+                Central Utah families.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-year">2015</div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h4 class="timeline-title">Major Milestone</h4>
+              <p class="timeline-description">
+                Celebrated 100 completed homes, showcasing our commitment to
+                quality craftsmanship and customer satisfaction throughout the
+                region.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-year">2020</div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h4 class="timeline-title">Innovation & Growth</h4>
+              <p class="timeline-description">
+                Integrated new technologies and sustainable building practices
+                while maintaining our commitment to traditional craftsmanship
+                and personal service.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-year">Present</div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h4 class="timeline-title">Continuing Excellence</h4>
+              <p class="timeline-description">
+                Today, we continue to innovate and build lasting relationships,
+                striving to make every dream home a reality while contributing
+                to Central Utah's vibrant future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Team Section -->
     <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Team</h2>
-            </div>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="team-image" style="background-image: url('images/nate-hooley.jpg');"></div>
-                    <div class="team-content">
-                        <h4>Nate Hooley</h4>
-                        <div class="team-role">Owner/Builder</div>
-                        <p class="team-bio">With over 20 years of experience in construction, Nate brings unmatched expertise and passion to every project. His commitment to quality and customer satisfaction drives everything we do.</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <div class="team-image" style="background-image: url('images/bria-kurtz.jpg');"></div>
-                    <div class="team-content">
-                        <h4>Bria Kurtz</h4>
-                        <div class="team-role">Project Coordinator</div>
-                        <p class="team-bio">Bria ensures seamless project coordination and exceptional client communication throughout the building process. Her attention to detail keeps every project on track.</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <div class="team-image" style="background-image: url('images/team-member-placeholder.jpg');"></div>
-                    <div class="team-content">
-                        <h4>We're Hiring!</h4>
-                        <div class="team-role">Join Our Team</div>
-                        <p class="team-bio">Are you passionate about building exceptional homes? We're always looking for talented individuals to join our growing team. Contact us to learn about current opportunities.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Team</h2>
         </div>
+        <div class="team-grid">
+          <div class="team-member">
+            <div
+              class="team-image"
+              style="background-image: url('images/nate-hooley.jpg')"
+            ></div>
+            <div class="team-content">
+              <h4>Nate Hooley</h4>
+              <div class="team-role">Owner/Builder</div>
+              <p class="team-bio">
+                With over 20 years of experience in construction, Nate brings
+                unmatched expertise and passion to every project. His commitment
+                to quality and customer satisfaction drives everything we do.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div
+              class="team-image"
+              style="background-image: url('images/bria-kurtz.jpg')"
+            ></div>
+            <div class="team-content">
+              <h4>Bria Kurtz</h4>
+              <div class="team-role">Project Coordinator</div>
+              <p class="team-bio">
+                Bria ensures seamless project coordination and exceptional
+                client communication throughout the building process. Her
+                attention to detail keeps every project on track.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div
+              class="team-image"
+              style="
+                background-image: url('images/team-member-placeholder.jpg');
+              "
+            ></div>
+            <div class="team-content">
+              <h4>We're Hiring!</h4>
+              <div class="team-role">Join Our Team</div>
+              <p class="team-bio">
+                Are you passionate about building exceptional homes? We're
+                always looking for talented individuals to join our growing
+                team. Contact us to learn about current opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Our Approach Section -->
-    <section class="section" style="background-color: var(--gray);">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Approach</h2>
-            </div>
-            <div class="approach-content">
-                <div class="approach-item">
-                    <h4>Building Relationships First</h4>
-                    <p>At Hooley Custom Homes, we believe that successful projects begin with strong relationships. Before we draw a single line or hammer a single nail, we invest time in getting to know you—your lifestyle, preferences, needs, and dreams for your home. This relationship-centered approach allows us to create spaces that reflect who you are and how you live.</p>
-                </div>
-                
-                <div class="approach-item">
-                    <h4>Transparent Process</h4>
-                    <p>Throughout your project, you'll enjoy complete visibility and regular communication. Our systematic approach eliminates surprises and ensures you're informed and involved at every stage:</p>
-                    <ol class="process-steps">
-                        <li><strong>Initial Consultation:</strong> We discuss your vision, needs, timeline, and budget</li>
-                        <li><strong>Design Development:</strong> Translating your ideas into detailed plans and specifications</li>
-                        <li><strong>Pre-Construction Planning:</strong> Finalizing selections, obtaining permits, and preparing for construction</li>
-                        <li><strong>Construction:</strong> Building your project with skilled craftsmanship and regular updates</li>
-                        <li><strong>Completion:</strong> Final inspections, walk-through, and ongoing support</li>
-                    </ol>
-                </div>
-                
-                <div class="approach-item">
-                    <h4>Local Expertise</h4>
-                    <p>Our deep understanding of Central Utah's unique building environment—from local building codes to weather considerations—allows us to navigate challenges that builders from outside the area might miss. We've cultivated relationships with the region's best subcontractors, suppliers, and artisans to ensure every aspect of your project meets our exacting standards.</p>
-                </div>
-                
-                <div class="approach-item">
-                    <h4>Quality Without Compromise</h4>
-                    <p>We never cut corners. From the foundation to the finishing touches, we use only premium materials and proven construction techniques. This commitment to quality ensures your home will stand the test of time and provide enduring value for generations to come.</p>
-                </div>
-            </div>
+    <section class="section" style="background-color: var(--gray)">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Approach</h2>
         </div>
+        <div class="approach-content">
+          <div class="approach-item">
+            <h4>Building Relationships First</h4>
+            <p>
+              At Hooley Custom Homes, we believe that successful projects begin
+              with strong relationships. Before we draw a single line or hammer
+              a single nail, we invest time in getting to know you—your
+              lifestyle, preferences, needs, and dreams for your home. This
+              relationship-centered approach allows us to create spaces that
+              reflect who you are and how you live.
+            </p>
+          </div>
+
+          <div class="approach-item">
+            <h4>Transparent Process</h4>
+            <p>
+              Throughout your project, you'll enjoy complete visibility and
+              regular communication. Our systematic approach eliminates
+              surprises and ensures you're informed and involved at every stage:
+            </p>
+            <ol class="process-steps">
+              <li>
+                <strong>Initial Consultation:</strong> We discuss your vision,
+                needs, timeline, and budget
+              </li>
+              <li>
+                <strong>Design Development:</strong> Translating your ideas into
+                detailed plans and specifications
+              </li>
+              <li>
+                <strong>Pre-Construction Planning:</strong> Finalizing
+                selections, obtaining permits, and preparing for construction
+              </li>
+              <li>
+                <strong>Construction:</strong> Building your project with
+                skilled craftsmanship and regular updates
+              </li>
+              <li>
+                <strong>Completion:</strong> Final inspections, walk-through,
+                and ongoing support
+              </li>
+            </ol>
+          </div>
+
+          <div class="approach-item">
+            <h4>Local Expertise</h4>
+            <p>
+              Our deep understanding of Central Utah's unique building
+              environment—from local building codes to weather
+              considerations—allows us to navigate challenges that builders from
+              outside the area might miss. We've cultivated relationships with
+              the region's best subcontractors, suppliers, and artisans to
+              ensure every aspect of your project meets our exacting standards.
+            </p>
+          </div>
+
+          <div class="approach-item">
+            <h4>Quality Without Compromise</h4>
+            <p>
+              We never cut corners. From the foundation to the finishing
+              touches, we use only premium materials and proven construction
+              techniques. This commitment to quality ensures your home will
+              stand the test of time and provide enduring value for generations
+              to come.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Our Values Section -->
     <section class="section values">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Values</h2>
-            </div>
-            <div class="values-grid">
-                <div class="value-item">
-                    <div class="value-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h4 class="value-title">Community</h4>
-                    <p class="value-description">Contributing to the vibrant future of Central Utah. We're proud to be part of this community and committed to its growth.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Values</h2>
         </div>
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="value-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h4 class="value-title">Community</h4>
+            <p class="value-description">
+              Contributing to the vibrant future of Central Utah. We're proud to
+              be part of this community and committed to its growth.
+            </p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h4 class="value-title">Integrity</h4>
+            <p class="value-description">
+              Doing what we say we'll do, when we say we'll do it. Our word is
+              our bond, and we stand behind every commitment we make.
+            </p>
+          </div>
+
+          <div class="value-item">
+            <div class="value-icon">
+              <i class="fas fa-hammer"></i>
+            </div>
+            <h4 class="value-title">Craftsmanship</h4>
+            <p class="value-description">
+              Taking pride in every detail, visible or hidden. Our skilled
+              craftsmen bring decades of experience to every project.
+            </p>
+          </div>
+
+          <div class="value-item">
+            <div class="value-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h4 class="value-title">Relationships</h4>
+            <p class="value-description">
+              Building partnerships based on trust and mutual respect. We don't
+              just build homes, we build lasting relationships.
+            </p>
+          </div>
+
+          <div class="value-item">
+            <div class="value-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h4 class="value-title">Innovation</h4>
+            <p class="value-description">
+              Embracing new technologies and techniques while honoring
+              traditional craftsmanship and time-tested building methods.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FAQ Section -->
     <section class="section faq">
-        <div class="container">
-            <div class="section-header">
-                <h2>Frequently Asked Questions</h2>
-            </div>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">What sets Hooley Custom Homes apart from other builders in Central Utah?</div>
-                    <div class="faq-answer">
-                        <p>What distinguishes us is our deep local roots in Sanpete County combined with our commitment to both traditional craftsmanship and modern building science. We bring generations of experience building in Central Utah's unique climate and terrain. Our relationship-focused approach means we limit the number of projects we take on to ensure each client receives the personalized attention they deserve. Additionally, our transparent process, quality-first mindset, and dedication to integrity have earned us a reputation as one of the region's most trusted builders.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">How long does it take to build a custom home?</div>
-                    <div class="faq-answer">
-                        <p>The timeline for building a custom home in Sanpete and surrounding counties typically ranges from 6-12 months, depending on the size, complexity, and time of year construction begins. Weather conditions in Central Utah can impact construction schedules, particularly during winter months. At Hooley Custom Homes, we provide a detailed construction timeline during the planning phase and keep you updated on progress throughout the building process.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">What is the price per square foot for a custom home?</div>
-                    <div class="faq-answer">
-                        <p>The cost per square foot varies widely based on many factors including site conditions, design complexity, finishes, and current material costs. In Central Utah, custom homes typically range from $250-$450+ per square foot. Rather than quoting a generic price per square foot, we prefer to discuss your specific project requirements to provide a more accurate estimate. This approach ensures transparency and helps avoid unexpected costs as your project progresses.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">Do I need an architect to design my custom home?</div>
-                    <div class="faq-answer">
-                        <p>While having an architect is beneficial, it's not always necessary. At Hooley Custom Homes, we offer design-build services where we can handle both the design and construction of your home. For more complex or unique designs, we can recommend qualified architects in the Central Utah area who understand local building traditions and code requirements. We're experienced in working with architects and can collaborate effectively throughout the design and construction process.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">How much input will I have during the construction process?</div>
-                    <div class="faq-answer">
-                        <p>At Hooley Custom Homes, we believe your involvement is crucial to creating a home that truly reflects your vision. We maintain open communication throughout the project, with regular meetings and updates. Our online project management system allows you to track progress, review schedules, and approve selections. We encourage your input on all decisions while providing expert guidance to help you make choices that align with both your vision and budget.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">What warranties do you offer?</div>
-                    <div class="faq-answer">
-                        <p>Hooley Custom Homes provides a comprehensive 1-year workmanship warranty that covers all aspects of construction. We also pass along manufacturer warranties for materials, fixtures, and systems, many of which extend well beyond our workmanship warranty. We conduct a 6-month and 11-month warranty inspection to address any concerns proactively. Our commitment to quality doesn't end at completion—we stand behind our work and respond promptly to any warranty needs.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">Do you build on lots that I already own?</div>
-                    <div class="faq-answer">
-                        <p>Yes, we regularly build on client-owned lots throughout Sanpete, Juab, and surrounding counties. We can evaluate your property to assess site conditions, utility access, and any special considerations that might impact construction. If you haven't purchased land yet, we can assist in evaluating potential properties to ensure they're suitable for the type of home you want to build.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">How are payments structured during construction?</div>
-                    <div class="faq-answer">
-                        <p>Our payment schedule is structured around construction milestones. Typically, this includes an initial deposit followed by progress payments as specific phases are completed. This approach ensures that payments align with actual construction progress. We provide a detailed payment schedule before construction begins so you know exactly what to expect throughout the process.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
         </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              What sets Hooley Custom Homes apart from other builders in Central
+              Utah?
+            </div>
+            <div class="faq-answer">
+              <p>
+                What distinguishes us is our deep local roots in Sanpete County
+                combined with our commitment to both traditional craftsmanship
+                and modern building science. We bring generations of experience
+                building in Central Utah's unique climate and terrain. Our
+                relationship-focused approach means we limit the number of
+                projects we take on to ensure each client receives the
+                personalized attention they deserve. Additionally, our
+                transparent process, quality-first mindset, and dedication to
+                integrity have earned us a reputation as one of the region's
+                most trusted builders.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              How long does it take to build a custom home?
+            </div>
+            <div class="faq-answer">
+              <p>
+                The timeline for building a custom home in Sanpete and
+                surrounding counties typically ranges from 6-12 months,
+                depending on the size, complexity, and time of year construction
+                begins. Weather conditions in Central Utah can impact
+                construction schedules, particularly during winter months. At
+                Hooley Custom Homes, we provide a detailed construction timeline
+                during the planning phase and keep you updated on progress
+                throughout the building process.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              What is the price per square foot for a custom home?
+            </div>
+            <div class="faq-answer">
+              <p>
+                The cost per square foot varies widely based on many factors
+                including site conditions, design complexity, finishes, and
+                current material costs. In Central Utah, custom homes typically
+                range from $250-$450+ per square foot. Rather than quoting a
+                generic price per square foot, we prefer to discuss your
+                specific project requirements to provide a more accurate
+                estimate. This approach ensures transparency and helps avoid
+                unexpected costs as your project progresses.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              Do I need an architect to design my custom home?
+            </div>
+            <div class="faq-answer">
+              <p>
+                While having an architect is beneficial, it's not always
+                necessary. At Hooley Custom Homes, we offer design-build
+                services where we can handle both the design and construction of
+                your home. For more complex or unique designs, we can recommend
+                qualified architects in the Central Utah area who understand
+                local building traditions and code requirements. We're
+                experienced in working with architects and can collaborate
+                effectively throughout the design and construction process.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              How much input will I have during the construction process?
+            </div>
+            <div class="faq-answer">
+              <p>
+                At Hooley Custom Homes, we believe your involvement is crucial
+                to creating a home that truly reflects your vision. We maintain
+                open communication throughout the project, with regular meetings
+                and updates. Our online project management system allows you to
+                track progress, review schedules, and approve selections. We
+                encourage your input on all decisions while providing expert
+                guidance to help you make choices that align with both your
+                vision and budget.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">What warranties do you offer?</div>
+            <div class="faq-answer">
+              <p>
+                Hooley Custom Homes provides a comprehensive 1-year workmanship
+                warranty that covers all aspects of construction. We also pass
+                along manufacturer warranties for materials, fixtures, and
+                systems, many of which extend well beyond our workmanship
+                warranty. We conduct a 6-month and 11-month warranty inspection
+                to address any concerns proactively. Our commitment to quality
+                doesn't end at completion—we stand behind our work and respond
+                promptly to any warranty needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              Do you build on lots that I already own?
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we regularly build on client-owned lots throughout Sanpete,
+                Juab, and surrounding counties. We can evaluate your property to
+                assess site conditions, utility access, and any special
+                considerations that might impact construction. If you haven't
+                purchased land yet, we can assist in evaluating potential
+                properties to ensure they're suitable for the type of home you
+                want to build.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              How are payments structured during construction?
+            </div>
+            <div class="faq-answer">
+              <p>
+                Our payment schedule is structured around construction
+                milestones. Typically, this includes an initial deposit followed
+                by progress payments as specific phases are completed. This
+                approach ensures that payments align with actual construction
+                progress. We provide a detailed payment schedule before
+                construction begins so you know exactly what to expect
+                throughout the process.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CTA Section -->
     <section class="section cta">
-        <div class="container">
-            <h2>Ready to Start Your Journey With Us?</h2>
-            <p>Contact us today for a free consultation and discover how we can bring your dream home to life in beautiful Central Utah.</p>
-            <a href="contact.html" class="btn">Get Started Today</a>
-        </div>
+      <div class="container">
+        <h2>Ready to Start Your Journey With Us?</h2>
+        <p>
+          Contact us today for a free consultation and discover how we can bring
+          your dream home to life in beautiful Central Utah.
+        </p>
+        <a href="contact.html" class="btn">Get Started Today</a>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3>Hooley Custom Homes</h3>
-                    <p>Bringing to life the homes people dream of in Sanpete & Juab County.</p>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/drywallcontractor/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/hooleygeneralcontracting" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="services.html">Custom Home Building</a></li>
-                        <li><a href="services.html">Renovations & Remodels</a></li>
-                        <li><a href="services.html">Home Additions</a></li>
-                        <li><a href="services.html">Income Properties</a></li>
-                        <li><a href="services.html">Custom Features</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Service Areas</h3>
-                    <ul class="footer-links">
-                        <li>Sanpete County</li>
-                        <li>Juab County</li>
-                        <li>Ephraim, UT</li>
-                        <li>Manti, UT</li>
-                        <li>Fairview, UT</li>
-                        <li>Mount Pleasant, UT</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-phone"></i> (435) 469-2059</li>
-                        <li><i class="fas fa-envelope"></i> hooleydrywall@gmail.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> 330 South 200 East, Fairview, UT 84629</li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3>Hooley Custom Homes</h3>
+            <p>
+              Bringing to life the homes people dream of in Sanpete & Juab
+              County.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/drywallcontractor/"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/hooleygeneralcontracting"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 Hooley Custom Homes LLC. All Rights Reserved.</p>
-                <p>#sanpetegeneralcontractor #generalcontractor #drywall #sanpetecountybuilders #juabcountybuilders #customhomes</p>
-            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Services</h3>
+            <ul class="footer-links">
+              <li><a href="services.html">Custom Home Building</a></li>
+              <li><a href="services.html">Renovations & Remodels</a></li>
+              <li><a href="services.html">Home Additions</a></li>
+              <li><a href="services.html">Income Properties</a></li>
+              <li><a href="services.html">Custom Features</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Service Areas</h3>
+            <ul class="footer-links">
+              <li>Sanpete County</li>
+              <li>Juab County</li>
+              <li>Ephraim, UT</li>
+              <li>Manti, UT</li>
+              <li>Fairview, UT</li>
+              <li>Mount Pleasant, UT</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="footer-links">
+              <li><i class="fas fa-phone"></i> (435) 469-2059</li>
+              <li><i class="fas fa-envelope"></i> hooleydrywall@gmail.com</li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 330 South 200 East,
+                Fairview, UT 84629
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="copyright">
+          <p>&copy; 2025 Hooley Custom Homes LLC. All Rights Reserved.</p>
+          <p>
+            #sanpetegeneralcontractor #generalcontractor #drywall
+            #sanpetecountybuilders #juabcountybuilders #customhomes
+          </p>
+        </div>
+      </div>
     </footer>
 
     <!-- JavaScript -->
     <script>
-        // Mobile Menu Toggle
-        const mobileToggle = document.querySelector('.mobile-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        
-        mobileToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.mobile-toggle') && !e.target.closest('.nav-links')) {
-                navLinks.classList.remove('active');
-            }
-        });
+      // Mobile Menu Toggle
+      const mobileToggle = document.querySelector(".mobile-toggle");
+      const navLinks = document.querySelector(".nav-links");
 
-        // FAQ Accordion
-        const faqItems = document.querySelectorAll('.faq-item');
-        
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            
-            question.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
-                
-                // Close all items
-                faqItems.forEach(faqItem => {
-                    faqItem.classList.remove('active');
-                });
-                
-                // Open clicked item if it wasn't active
-                if (!isActive) {
-                    item.classList.add('active');
-                }
+      mobileToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (
+          !e.target.closest(".mobile-toggle") &&
+          !e.target.closest(".nav-links")
+        ) {
+          navLinks.classList.remove("active");
+        }
+      });
+
+      // FAQ Accordion
+      const faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach((item) => {
+        const question = item.querySelector(".faq-question");
+
+        question.addEventListener("click", () => {
+          const isActive = item.classList.contains("active");
+
+          // Close all items
+          faqItems.forEach((faqItem) => {
+            faqItem.classList.remove("active");
+          });
+
+          // Open clicked item if it wasn't active
+          if (!isActive) {
+            item.classList.add("active");
+          }
+        });
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
             });
+          }
         });
+      });
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
+      // Animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
         });
+      }, observerOptions);
 
-        // Animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe elements for animation
-        document.addEventListener('DOMContentLoaded', () => {
-            const animateElements = document.querySelectorAll('.team-member, .value-item, .approach-item');
-            animateElements.forEach(element => {
-                element.style.opacity = '0';
-                element.style.transform = 'translateY(20px)';
-                element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(element);
-            });
+      // Observe elements for animation
+      document.addEventListener("DOMContentLoaded", () => {
+        const animateElements = document.querySelectorAll(
+          ".team-member, .value-item, .approach-item"
+        );
+        animateElements.forEach((element) => {
+          element.style.opacity = "0";
+          element.style.transform = "translateY(20px)";
+          element.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+          observer.observe(element);
         });
+      });
 
-        // Counter animation for stats
-        const animateCounter = (element, start, end, duration) => {
-            let startTimestamp = null;
-            const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                const current = Math.floor(progress * (end - start) + start);
-                element.textContent = current + (element.textContent.includes('+') ? '+' : '');
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
-                }
-            };
+      // Counter animation for stats
+      const animateCounter = (element, start, end, duration) => {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          const current = Math.floor(progress * (end - start) + start);
+          element.textContent =
+            current + (element.textContent.includes("+") ? "+" : "");
+          if (progress < 1) {
             window.requestAnimationFrame(step);
+          }
         };
+        window.requestAnimationFrame(step);
+      };
 
-        // Trigger counter animation when stats come into view
-        const statsObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const statNumbers = entry.target.querySelectorAll('.stat-number');
-                    statNumbers.forEach((stat, index) => {
-                        const finalValue = parseInt(stat.textContent);
-                        stat.textContent = '0';
-                        setTimeout(() => {
-                            animateCounter(stat, 0, finalValue, 2000);
-                        }, index * 200);
-                    });
-                    statsObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const statsContainer = document.querySelector('.stats-container');
-            if (statsContainer) {
-                statsObserver.observe(statsContainer);
+      // Trigger counter animation when stats come into view
+      const statsObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const statNumbers = entry.target.querySelectorAll(".stat-number");
+              statNumbers.forEach((stat, index) => {
+                const finalValue = parseInt(stat.textContent);
+                stat.textContent = "0";
+                setTimeout(() => {
+                  animateCounter(stat, 0, finalValue, 2000);
+                }, index * 200);
+              });
+              statsObserver.unobserve(entry.target);
             }
-        });
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const statsContainer = document.querySelector(".stats-container");
+        if (statsContainer) {
+          statsObserver.observe(statsContainer);
+        }
+      });
     </script>
 
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
-    {
+      {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Hooley Custom Homes LLC",
         "description": "Family-owned custom home builder with deep roots in Sanpete County, serving Central Utah with quality craftsmanship and personalized service.",
         "foundingDate": "2007",
         "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "330 South 200 East",
-            "addressLocality": "Fairview",
-            "addressRegion": "UT",
-            "postalCode": "84629",
-            "addressCountry": "US"
+          "@type": "PostalAddress",
+          "streetAddress": "330 South 200 East",
+          "addressLocality": "Fairview",
+          "addressRegion": "UT",
+          "postalCode": "84629",
+          "addressCountry": "US"
         },
         "telephone": "(435) 469-2059",
         "email": "hooleydrywall@gmail.com",
         "url": "https://www.hooleycustomhomes.com",
         "sameAs": [
-            "https://www.facebook.com/drywallcontractor/",
-            "https://www.instagram.com/hooleygeneralcontracting"
+          "https://www.facebook.com/drywallcontractor/",
+          "https://www.instagram.com/hooleygeneralcontracting"
         ],
         "serviceArea": [
-            "Sanpete County, UT",
-            "Juab County, UT",
-            "Ephraim, UT",
-            "Manti, UT",
-            "Fairview, UT",
-            "Mount Pleasant, UT"
+          "Sanpete County, UT",
+          "Juab County, UT",
+          "Ephraim, UT",
+          "Manti, UT",
+          "Fairview, UT",
+          "Mount Pleasant, UT"
         ],
         "founder": {
-            "@type": "Person",
-            "name": "Nate Hooley"
+          "@type": "Person",
+          "name": "Nate Hooley"
         },
         "employee": [
-            {
-                "@type": "Person",
-                "name": "Nate Hooley",
-                "jobTitle": "Owner/Builder"
-            },
-            {
-                "@type": "Person",
-                "name": "Bria Kurtz",
-                "jobTitle": "Project Coordinator"
-            }
+          {
+            "@type": "Person",
+            "name": "Nate Hooley",
+            "jobTitle": "Owner/Builder"
+          },
+          {
+            "@type": "Person",
+            "name": "Bria Kurtz",
+            "jobTitle": "Project Coordinator"
+          }
         ],
         "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Custom Home Building Services",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Custom Home Building",
-                        "description": "Complete custom home construction services"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Home Renovations",
-                        "description": "Comprehensive home renovation and remodeling services"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Home Additions",
-                        "description": "Custom home additions and extensions"
-                    }
-                }
-            ]
+          "@type": "OfferCatalog",
+          "name": "Custom Home Building Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Custom Home Building",
+                "description": "Complete custom home construction services"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Home Renovations",
+                "description": "Comprehensive home renovation and remodeling services"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Home Additions",
+                "description": "Custom home additions and extensions"
+              }
+            }
+          ]
         }
-    }
+      }
     </script>
-</body>
-</html>item">
-                    <div class="value-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h4 class="value-title">Integrity</h4>
-                    <p class="value-description">Doing what we say we'll do, when we say we'll do it. Our word is our bond, and we stand behind every commitment we make.</p>
-                </div>
-                
-                <div class="value-item">
-                    <div class="value-icon">
-                        <i class="fas fa-hammer"></i>
-                    </div>
-                    <h4 class="value-title">Craftsmanship</h4>
-                    <p class="value-description">Taking pride in every detail, visible or hidden. Our skilled craftsmen bring decades of experience to every project.</p>
-                </div>
-                
-                <div class="value-item">
-                    <div class="value-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h4 class="value-title">Relationships</h4>
-                    <p class="value-description">Building partnerships based on trust and mutual respect. We don't just build homes, we build lasting relationships.</p>
-                </div>
-                
-                <div class="value-item">
-                    <div class="value-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h4 class="value-title">Innovation</h4>
-                    <p class="value-description">Embracing new technologies and techniques while honoring traditional craftsmanship and time-tested building methods.</p>
-                </div>
-                
-                <div class="value-
+  </body>
+</html>
